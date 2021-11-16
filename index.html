@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Passwoord Generator</h1>
+        <div class="p-header">
+            <input type="text" id="password">
+            <button class="copy" id="copy">Copy</button>
+        </div>
+        <div class="p-body">
+            <div class="form-control">
+                <label for="p-length">Passwoord Length</label>
+                <input type="number" id="p-length" value="12" min="8" max="30">
+            </div>
+            <div class="form-control">
+                <label for="p-uppercase">Include Uppercase</label>
+                <input type="checkbox" checked id="p-uppercase" class="checkboxSize">
+            </div>
+            <div class="form-control">
+                <label for="p-lowercase">Include Lowercase</label>
+                <input type="checkbox" id="p-lowercase" class="checkboxSize">
+            </div>
+            <div class="form-control">
+                <label for="p-number">Include Numbers</label>
+                <input type="checkbox" id="p-number" class="checkboxSize">
+            </div>
+            <div class="form-control">
+                <label for="p-symbol">Include Symbols</label>
+                <input type="checkbox" id="p-symbol" class="checkboxSize">
+            </div>
+            <button id="submit">GENERATE PASSWORD</button>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
